@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    axios.get('http://localhost/php%20course/api_get.php').then(function (res){
+        console.log(res.data.message.msg)
+        console.log(res.data.data)
+
+    }).catch(function (error){
+        console.log('sorry you have an error')
+    })
+</script>
+</html>
